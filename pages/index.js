@@ -1,8 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { buildUrl } from 'cloudinary-build-url';
+import imageGallery from '../data/images';
+import {AdvancedImage} from '@cloudinary/react';
+import {Cloudinary} from "@cloudinary/url-gen";
+import CloudinaryImages from '../components/cloudinaryImages';
+import LargeImage from './images';
 
 export default function Home() {
+
+
+
+  // 3. Get your image
+  //===================
+
+  // Instantiate a CloudinaryImage object for the image with the public ID, 'docs/models'.
+// https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0834_yb8wls.jpg
+// https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0838_c8ypkj.jpg
   return (
     <div className={styles.container}>
       <Head>
@@ -13,43 +29,49 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+Welcome to the beach!
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <p>Take a look around. Click on each image/video to view full size. </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          {/* <CloudinaryImages images={imageGallery} /> */}
+    <LargeImage imagePage={imageGallery} />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+    <div className={styles.card}>
+    <Link href='https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300111/OIB/IMG_6613_rfd68q.mov'>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                <Image
+                  src={'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318639/OIB/Screen_Shot_2022-05-23_at_11.10.05_AM_nhnbeo.png'}
+                  alt="Galaxy"
+                  height={2138}
+                  width={1222}
+                />
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          </Link>
+
+
+
+    </div>
+
+    <div className={styles.card}>
+    <Link href='https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300109/OIB/IMG_6614_hkwwg9.mov'>
+
+                <Image
+                  src={'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318924/OIB/Screen_Shot_2022-05-23_at_11.14.24_AM_xfkxju.png'}
+                  alt="Galaxy"
+                  height={2142}
+                  width={1216}
+                />
+
+          </Link>
+
+
+
+    </div>
+
+          </div>
+
+
       </main>
 
       <footer className={styles.footer}>
