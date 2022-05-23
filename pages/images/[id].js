@@ -7,7 +7,7 @@ const Comment = () => {
 
   return (
     <>
-      <h1>Post: {id}</h1>
+      <h1>Image: {id}</h1>
               <Image
                   src={largeimage}
                   alt="Galaxy"
