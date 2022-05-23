@@ -6,8 +6,7 @@ import { buildUrl } from 'cloudinary-build-url';
 import imageGallery from '../data/images';
 import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
-import CloudinaryImages from '../components/cloudinaryImages';
-import LargeImage from './images';
+import LargeImage from '../components/largeImage';
 
 export default function Home() {
 

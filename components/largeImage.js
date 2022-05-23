@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from "../../styles/Home.module.css"
-import imageGallery from '../../data/images'
+import styles from "../styles/Home.module.css"
+import imageGallery from '../data/images'
 
 const LargeImage = ({ imagePage}) => {
 
