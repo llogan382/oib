@@ -1,23 +1,30 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-import { buildUrl } from 'cloudinary-build-url';
-import imageGallery from '../data/images';
-import {AdvancedImage} from '@cloudinary/react';
-import {Cloudinary} from "@cloudinary/url-gen";
-import LargeImage from '../components/largeImage';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+import { buildUrl } from "cloudinary-build-url";
+import imageGallery from "../data/images";
+import { AdvancedImage } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
+import LargeImage from "../components/largeImage";
 
 export default function Home() {
 
 
-
+  const categories = {
+    bedroom: "bedroom",
+    kitchen: "kitchen",
+    bathroom: "bath",
+    livingroom: "living",
+    diningroom: "diningroom",
+    outside: "outside"
+  };
   // 3. Get your image
   //===================
 
   // Instantiate a CloudinaryImage object for the image with the public ID, 'docs/models'.
-// https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0834_yb8wls.jpg
-// https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0838_c8ypkj.jpg
+  // https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0834_yb8wls.jpg
+  // https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0838_c8ypkj.jpg
   return (
     <div className={styles.container}>
       <Head>
@@ -27,50 +34,78 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-Welcome to the beach!
-        </h1>
-      <p>Take a look around. Click on each image/video to view full size. </p>
+        <h1 className={styles.title}>Welcome to the beach!</h1>
+        <p>Take a look around. Click on each image/video to view full size. </p>
 
-        <div className={styles.grid}>
+
           {/* <CloudinaryImages images={imageGallery} /> */}
-    <LargeImage imagePage={imageGallery} />
+          <h2>Outside</h2>
+          <div className={styles.grid}>
 
-    <div className={styles.card}>
-    <Link href='https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300111/OIB/IMG_6613_rfd68q.mov'>
+          <LargeImage imagePage={imageGallery} category={categories.outside} />
+          <LargeImage imagePage={imageGallery} category="outside-shower" />
 
-                <Image
-                  src={'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318639/OIB/Screen_Shot_2022-05-23_at_11.10.05_AM_nhnbeo.png'}
-                  alt="Galaxy"
-                  height={2138}
-                  width={1222}
-                />
+          </div>
 
-          </Link>
+          <h2>Kitchen</h2>
+          <div className={styles.grid}>
 
-
-
-    </div>
-
-    <div className={styles.card}>
-    <Link href='https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300109/OIB/IMG_6614_hkwwg9.mov'>
-
-                <Image
-                  src={'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318924/OIB/Screen_Shot_2022-05-23_at_11.14.24_AM_xfkxju.png'}
-                  alt="Galaxy"
-                  height={2142}
-                  width={1216}
-                />
-
-          </Link>
-
-
-
-    </div>
+          <LargeImage imagePage={imageGallery} category={categories.kitchen} />
 
           </div>
 
 
+          <h2>Bedrooms</h2>
+          <div className={styles.grid}>
+
+          <LargeImage imagePage={imageGallery} category={categories.bedroom} />
+
+          </div>
+
+          <h2>Living areas</h2>
+          <div className={styles.grid}>
+
+          <LargeImage imagePage={imageGallery} category={categories.livingroom} />
+
+          </div>
+
+          <h2>Bathrooms</h2>
+          <div className={styles.grid}>
+
+          <LargeImage imagePage={imageGallery} category={categories.bathroom} />
+
+          </div>
+          <h2>Video Tours</h2>
+
+          <div className={styles.grid}>
+
+          <div className={styles.card}>
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300111/OIB/IMG_6613_rfd68q.mov">
+              <Image
+                src={
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318639/OIB/Screen_Shot_2022-05-23_at_11.10.05_AM_nhnbeo.png"
+                }
+                alt="Galaxy"
+                height={2138}
+                width={1222}
+              />
+            </Link>
+          </div>
+
+          <div className={styles.card}>
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300109/OIB/IMG_6614_hkwwg9.mov">
+              <Image
+                src={
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318924/OIB/Screen_Shot_2022-05-23_at_11.14.24_AM_xfkxju.png"
+                }
+                alt="Galaxy"
+                height={2142}
+                width={1216}
+              />
+            </Link>
+          </div>
+
+          </div>
       </main>
 
       <footer className={styles.footer}>
@@ -79,12 +114,12 @@ Welcome to the beach!
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }

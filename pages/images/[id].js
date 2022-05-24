@@ -8,6 +8,7 @@ const Comment = () => {
   return (
     <>
       <h1>Image: {id}</h1>
+      {console.log(largeimage)}
               <Image
                   src={largeimage}
                   alt="Galaxy"
