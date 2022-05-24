@@ -7,6 +7,13 @@ import imageGallery from '../data/images'
 
 const LargeImage = ({ imagePage}) => {
 
+  function checkCategory(category) {
+    if (category === "") {
+      return true
+    } else {
+      return false
+    }
+  }
   return (
     <>
       {imagePage.map((image) => (
