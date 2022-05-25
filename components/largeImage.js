@@ -14,18 +14,17 @@ const LargeImage = ({ imagePage, category }) => {
     <>
       {filteredImages.map((image) => (
         <div key={image.id} >
-        {console.log(filteredImages)}
 
                   <div className={styles.card}>
           <Link
             href={{
               pathname: `/images/${encodeURIComponent(image.id)}`,
-              query: { largeimage: image.url },
+              query: { largeimage: image.url, description: image.description },
             }}
           >
             <Image src={image.url} alt="Galaxy" height={4032} width={3024} />
           </Link>
-          <p>{image.id}</p>
+          <p>{image.description}</p>
         </div>
         </div>
 

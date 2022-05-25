@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to the beach!</h1>
+        <h1 className={styles.title}>Welcome to The Anchor Inn at Ocean Isle Beach</h1>
         <p>Take a look around. Click on each image/video to view full size. </p>
 
 
@@ -93,7 +93,7 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300109/OIB/IMG_6614_hkwwg9.mov">
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485088/OIB/1080lowq_cf2myk.mp4">
               <Image
                 src={
                   "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318924/OIB/Screen_Shot_2022-05-23_at_11.14.24_AM_xfkxju.png"
@@ -105,20 +105,34 @@ export default function Home() {
             </Link>
           </div>
 
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0E5uC_JPld4?rel=0&modestbranding=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+
+          <div className={styles.card}>
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653484824/OIB/480p_wvafj8.mov">
+              <Image
+                src={
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653483348/OIB/IMG_0840_cn2dwr.jpg"
+                }
+                alt="Galaxy"
+                height={2142}
+                width={1216}
+              />
+            </Link>
+          <p>Video Tour</p>
+
           </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+
+          <Link
+            href="https://www.loganwebdev.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Powered by Logan Web Dev</Link>
+
       </footer>
     </div>
   );
