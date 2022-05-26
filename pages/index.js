@@ -35,7 +35,24 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to The Anchor Inn at Ocean Isle Beach</h1>
-        <p>Take a look around. Click on each image/video to view full size. </p>
+        <section>
+
+<p>
+
+The Anchor Inn is located on the west side of Ocean Isle Beach. The house has 5 bedrooms and 5 1/2 baths. Each bedroom has its own bath.  Each bedroom has a 32” TV.
+</p>
+<p>
+The house is a reverse house plan, in which, the kitchen is located on the upper floor for the best views. There are 3 bedrooms located on the lower floor with 2 bedrooms located on the upper floor. Also, on the lower floor is the laundry room and a wet bar.
+</p>
+
+<p>
+With rental of the house your family will have access to the community pool that is located at 101 West Ocean Drive.
+It is a short 3-5 minute walk from the house. Also, with your rental, your family will have access to the elevator, beach chairs, linens and bath towels.
+</p>
+
+
+
+        </section>
 
 
           {/* <CloudinaryImages images={imageGallery} /> */}
@@ -106,11 +123,9 @@ export default function Home() {
           </div>
 
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/0E5uC_JPld4?rel=0&modestbranding=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          </div>
 
           <div className={styles.card}>
-            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653484824/OIB/480p_wvafj8.mov">
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485885/1080lowqpt1_ttsefi.mp4">
               <Image
                 src={
                   "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653483348/OIB/IMG_0840_cn2dwr.jpg"
@@ -120,7 +135,23 @@ export default function Home() {
                 width={1216}
               />
             </Link>
-          <p>Video Tour</p>
+          <p>Video Tour pt1</p>
+
+          </div>
+
+          <div className={styles.card}>
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485896/hq-pt2_etr9uc.mp4">
+              <Image
+                src={
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653483348/OIB/IMG_0840_cn2dwr.jpg"
+                }
+                alt="Galaxy"
+                height={2142}
+                width={1216}
+              />
+            </Link>
+          <p>Video Tour pt2</p>
+          </div>
 
           </div>
       </main>
