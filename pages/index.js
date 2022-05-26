@@ -49,7 +49,9 @@ The house is a reverse house plan, in which, the kitchen is located on the upper
 With rental of the house your family will have access to the community pool that is located at 101 West Ocean Drive.
 It is a short 3-5 minute walk from the house. Also, with your rental, your family will have access to the elevator, beach chairs, linens and bath towels.
 </p>
-
+<p>
+After coming in from the beach the house offers a spacious outdoor shower with hot and cold water with a huge dressing area.
+</p>
 
 
         </section>
