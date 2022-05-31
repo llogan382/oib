@@ -102,7 +102,7 @@ After coming in from the beach the house offers a spacious outdoor shower with h
             <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300111/OIB/IMG_6613_rfd68q.mov">
               <Image
                 src={
-                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318639/OIB/Screen_Shot_2022-05-23_at_11.10.05_AM_nhnbeo.png"
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653991034/OIB/Screen_Shot_2022-05-31_at_5.56.58_AM_dfghy1.png"
                 }
                 alt="Galaxy"
                 height={2138}
@@ -115,47 +115,32 @@ After coming in from the beach the house offers a spacious outdoor shower with h
             <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485088/OIB/1080lowq_cf2myk.mp4">
               <Image
                 src={
-                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653318924/OIB/Screen_Shot_2022-05-23_at_11.14.24_AM_xfkxju.png"
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653990869/OIB/Screen_Shot_2022-05-31_at_5.53.46_AM_wbjcw2.png"
                 }
                 alt="Galaxy"
                 height={2142}
                 width={1216}
               />
             </Link>
-          </div>
-
-
-
-          <div className={styles.card}>
-            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485885/1080lowqpt1_ttsefi.mp4">
-              <Image
-                src={
-                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653483348/OIB/IMG_0840_cn2dwr.jpg"
-                }
-                alt="Galaxy"
-                height={2142}
-                width={1216}
-              />
-            </Link>
-          <p>Video Tour pt1</p>
-
           </div>
 
           <div className={styles.card}>
-            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485896/hq-pt2_etr9uc.mp4">
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300109/OIB/IMG_6614_hkwwg9.mov">
               <Image
                 src={
-                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653483348/OIB/IMG_0840_cn2dwr.jpg"
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653991171/OIB/Screen_Shot_2022-05-31_at_5.59.16_AM_nprcml.png"
                 }
                 alt="Galaxy"
                 height={2142}
                 width={1216}
               />
             </Link>
-          <p>Video Tour pt2</p>
           </div>
 
+
           </div>
+
+
       </main>
 
       <footer className={styles.footer}>
