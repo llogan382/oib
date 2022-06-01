@@ -46,7 +46,7 @@ The house is a reverse house plan, in which, the kitchen is located on the upper
 </p>
 
 <p>
-With rental of the house your family will have access to the community pool that is located at 101 West Ocean Drive.
+With rental of the house your family will have access to the community pool that is located at 103 West Ocean Drive.
 It is a short 3-5 minute walk from the house. Also, with your rental, your family will have access to the elevator, beach chairs, linens and bath towels.
 </p>
 <p>
@@ -97,7 +97,18 @@ After coming in from the beach the house offers a spacious outdoor shower with h
           <h2>Video Tours</h2>
 
           <div className={styles.grid}>
-
+          <div className={styles.card}>
+            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485088/OIB/1080lowq_cf2myk.mp4">
+              <Image
+                src={
+                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653990869/OIB/Screen_Shot_2022-05-31_at_5.53.46_AM_wbjcw2.png"
+                }
+                alt="Galaxy"
+                height={2142}
+                width={1216}
+              />
+            </Link>
+          </div>
           <div className={styles.card}>
             <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300111/OIB/IMG_6613_rfd68q.mov">
               <Image
@@ -111,18 +122,7 @@ After coming in from the beach the house offers a spacious outdoor shower with h
             </Link>
           </div>
 
-          <div className={styles.card}>
-            <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653485088/OIB/1080lowq_cf2myk.mp4">
-              <Image
-                src={
-                  "https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653990869/OIB/Screen_Shot_2022-05-31_at_5.53.46_AM_wbjcw2.png"
-                }
-                alt="Galaxy"
-                height={2142}
-                width={1216}
-              />
-            </Link>
-          </div>
+
 
           <div className={styles.card}>
             <Link href="https://res.cloudinary.com/lwd-loganwebdev/video/upload/v1653300109/OIB/IMG_6614_hkwwg9.mov">

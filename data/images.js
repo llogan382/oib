@@ -4,7 +4,7 @@ const imageGallery = [
 {url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300084/OIB/IMG_0856_nsumbw.jpg', id: '16', description: '', category: "outside"},
 {url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300085/OIB/IMG_0855_pxktfn.jpg', id: '14', description: '', category: "outside"},
 {url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300088/OIB/IMG_0830_zjscrl.jpg', id: '4', description: 'Side view to the ocean. 250 yards to the beach', category: "outside"},
-{url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300089/OIB/IMG_0831_mtdfft.jpg', id: '3', description: 'Upper bedroom with one queen bed and one double bed', category: "bedroom"},
+{url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300089/OIB/IMG_0831_mtdfft.jpg', id: '3', description: 'Upper bedroom with one twin and one double', category: "bedroom"},
 {url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300087/OIB/IMG_0833_m0l3eb.jpg', id: '6', description: 'Upper bedroom with one king bed', category: "bedroom"},
 {url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0838_c8ypkj.jpg', id: '8', description: 'Lower bedroom with one king bed', category: "bedroom"},
 {url: 'https://res.cloudinary.com/lwd-loganwebdev/image/upload/v1653300086/OIB/IMG_0837_fvjmbz.jpg', id: '10', description: 'Lower bedroom with one king bed', category: "bedroom"},
